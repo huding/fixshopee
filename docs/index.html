@@ -1,0 +1,19 @@
+<html>
+<title>Fix link shopee</title>
+<meta charset="utf-8">
+<body>
+<p>Nhập link shopee bị lỗi vào ô dưới này:</p>
+  Link: <input type="text" name="fname" width=600><br>
+  <br><br>
+  <input type="button" onclick="myFunction()" value="Lấy ảnh">
+  <img id="image" src="" />
+
+<script>
+function myFunction() {
+  var url =  document.getElementById("searchTxt").value
+  url = url.replace('cf.shopee.vn/file///','')
+  document.getElementById("#image").src= url;
+}
+</script>
+</body>
+</html>
